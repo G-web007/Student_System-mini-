@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../assets/bg2.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+
+}
+
+.container{
+    width: 400px;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+}
+
+.container .login-text {
+    color: #111;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.container .login-email .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+    margin: 3px;
+}
+
+.container .login-email .input-group input:focus .login-email .input-group input:valid {
+    border-color: #a29bfe;
+}
+
+.container .login-email .input-group .btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: rgb(117, 186, 241);
+    outline: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    margin: 3px;
+}
+
+.container .login-email .input-group .btn:hover {
+    transform: translateY(-5px);
+    background: rgb(151, 203, 245);
+}
+
+.login-register-text {
+    color: #111;
+    font-weight: 500;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.login-register-text a {
+    text-decoration: none;
+    color: rgb(173, 226, 241);
+}
+
+.main_container {
+    width: 1300px;
+    min-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    padding: 40px 30px;
+    background: #FFF;
+}
+
+table {
+    border: 1px solid rgb(163, 163, 163);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+h2 {
+    color: rgb(90, 90, 90);
+    text-align: center;
+
+}
+
+.top-right, .top-middle {
+    float: right;
+    margin-right: 5px;
+}
+
+.top-right:hover {
+    background: rgb(117, 233, 253);
+}
+
+
+.top-middle:hover {
+    background: rgb(117, 233, 253);
+}
+
+.top-search:hover {
+    background: rgb(117, 233, 253);
+}
+
+select {
+    margin-left: 10px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+
+}
+
+
+a:hover, a:active {
+    color:rgb(32, 222, 255);
+}
+
+.form-select {
+    width: 94%;
+}
+
+.pagination {   
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px;  
+}   
+.pagination a {   
+    font-weight:bold;   
+    font-size:18px;   
+    color: rgb(71, 71, 71);   
+    float: left;   
+    padding: 3px 13px;   
+    text-decoration: none;   
+    border:1px solid rgb(56, 56, 56);   
+    justify-content: center;
+}   
+.pagination a.active {   
+        background-color: rgb(32, 222, 255);   
+}   
+.pagination a:hover:not(.active) {   
+    background-color: skyblue;   
+}   
+
+
+@media (max-width: 430px) {
+    .container, .main_container {
+        width: 300px;
+    }
+}
